@@ -1,0 +1,106 @@
+/* Reset default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style header */
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Style main content */
+main {
+  gap: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.showmember{
+  margin: 40px;
+  display: grid;
+  gap: 30px;
+  grid-template-columns: minmax(360px, 600px) minmax(360px, 600px) minmax(360px, 600px) minmax(360px, 600px);
+  justify-content:center;
+}
+
+.fieldmember{
+  display: grid;
+  height: auto;
+}
+
+/* Style member profile photo card */
+.prmember {
+  width: auto;
+  border: 1px solid #ccc;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: auto;
+  gap: 20px;
+}
+
+/* Style member profile card */
+.member {
+  width: auto;
+  border: 1px solid #ccc;
+  padding: 15px;
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 20px;
+}
+
+/* Style member key (info) card */
+.memberkey{
+  text-align: left;
+}
+
+.memberval{
+  text-align: right;
+}
+
+.member p {
+  margin-bottom: 10px;
+}
+
+.prmember img {
+  width: auto;
+  height: auto;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 10px;
+  justify-self: center;
+}
+
+body{
+  min-height: 2000px;
+}
+.jumbotron{
+  padding-top: 10%;
+  background-color: #AFE5BE;
+}
+
+#About-Us{
+  background-color: #AFE5BE;
+}
+
+section{
+  padding-top: 6%;
+}
+
+/* Query for screen/window less than 1620px*/
+@media screen and (max-width: 1620px) {
+  .showmember{
+    grid-template-columns: minmax(360px, 600px) minmax(360px, 600px);
+  }
+}
+
+/* Query for screen/window less than 992px*/
+@media screen and (max-width: 992px) {
+  .showmember{
+    grid-template-columns: minmax(360px, 600px);
+  }
+}
